@@ -86,6 +86,8 @@ router.get('/edit',(req,res,next)=>{
             res.render('hello/edit',data);
             }
         });
+
+//指定レコードを削除
 router.get('/delete',(req,res,next) =>{
     var id = req.query.id;
 
