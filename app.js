@@ -15,6 +15,8 @@ var ajax = require('./routes/ajax');
 var session = require('express-session');
 var app = express();
 
+var validator = require('express-validator');
+app.use(validator());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
